@@ -254,7 +254,11 @@
 
 //Ruin version
 /obj/effect/sliding_puzzle/lavaland
+<<<<<<< HEAD
 	reward_type = /obj/structure/closet/crate/necropolis
+=======
+	reward_type = /obj/structure/closet/crate/necropolis/tendril
+>>>>>>> upstream/master
 
 /obj/effect/sliding_puzzle/lavaland/dispense_reward()
 	if(prob(25))

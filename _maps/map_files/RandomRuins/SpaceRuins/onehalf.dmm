@@ -1075,16 +1075,6 @@
 /obj/item/multitool,
 /turf/simulated/floor/plating,
 /area/ruin/space/onehalf/abandonedbridge)
-"cM" = (
-/obj/structure/safe/floor,
-/obj/item/tank/internals/oxygen/red,
-/obj/item/clothing/mask/gas/syndicate,
-/obj/item/mod/control/pre_equipped/traitor,
-/obj/item/reagent_containers/food/drinks/bottle/rum,
-/obj/item/reagent_containers/food/drinks/bottle/rum,
-/obj/item/folder/syndicate/blue,
-/turf/simulated/floor/plating,
-/area/ruin/space/onehalf/abandonedbridge)
 "cN" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -1324,6 +1314,16 @@
 	},
 /turf/template_noop,
 /area/space/nearstation)
+"Je" = (
+/obj/structure/safe/floor,
+/obj/item/tank/internals/oxygen/red,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/mod/control/pre_equipped/traitor,
+/obj/item/reagent_containers/food/drinks/bottle/rum,
+/obj/item/reagent_containers/food/drinks/bottle/rum,
+/obj/item/folder/syndicate/blue,
+/turf/simulated/floor/plating,
+/area/ruin/space/onehalf/abandonedbridge)
 
 (1,1,1) = {"
 aa
@@ -1801,7 +1801,7 @@ bT
 cg
 cs
 cr
-cM
+Je
 cr
 cW
 ch

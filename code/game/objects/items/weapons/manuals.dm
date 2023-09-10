@@ -149,7 +149,11 @@
 			Arc Type: The engine's EER is raised massively several minutes, resulting it a supercritical state.</br>
 			Heat Type: The amount of heat released by the engine is massively increased for several minutes.</br></br>
 
+<<<<<<< HEAD
 			In the event that an anomaly NOT on this list presents itself, contact your local NanoTrasen Engineering Officer as soon as possible.</br>
+=======
+			In the event that an anomaly NOT on this list presents itself, contact your local Nanotrasen Engineering Officer as soon as possible.</br>
+>>>>>>> upstream/master
 			-Vroo-Looum-Kloo, Senior Engine Technician."})
 
 /obj/item/book/manual/atmospipes
@@ -731,7 +735,7 @@
 	name = "Chef Recipes"
 	desc = "Knives, Ovens, and You: A guide to cooking."
 	icon_state = "cook_book"
-	author = "NanoTrasen"
+	author = "Nanotrasen"
 	title = "Chef Recipes"
 	wiki_article_title = "Guide_to_Food_and_Drinks#Food"
 
@@ -745,7 +749,7 @@
 
 /obj/item/book/manual/wiki/faxes
 	name = "Guide to Faxes"
-	desc = "NanoTrasen's own manual on how to write faxes."
+	desc = "Nanotrasen's own manual on how to write faxes."
 	icon_state ="bookEngineering"
 	author = "Nanotrasen"
 	title = "Faxes and You!"

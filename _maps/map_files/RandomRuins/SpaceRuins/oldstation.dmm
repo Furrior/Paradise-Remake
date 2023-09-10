@@ -518,18 +518,6 @@
 /obj/effect/spawner/random_spawners/wall_rusted_always,
 /turf/simulated/wall,
 /area/ruin/ancientstation)
-"bE" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation)
 "bF" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -562,13 +550,6 @@
 "bJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation)
-"bK" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel,
 /area/ruin/ancientstation)
@@ -809,14 +790,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/science,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation/thetacorridor)
-"ct" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel,
 /area/ruin/ancientstation/thetacorridor)
@@ -1302,20 +1275,6 @@
 /obj/machinery/atmospherics/portable/canister,
 /turf/simulated/floor/plating/airless,
 /area/ruin/ancientstation/betanorth)
-"dK" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/hivebot/strong,
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation/thetacorridor)
 "dL" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -1537,24 +1496,6 @@
 	icon_state = "red"
 	},
 /area/ruin/ancientstation/sec)
-"em" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/machinery/firealarm{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
-	dir = 9;
-	icon_state = "green"
-	},
-/area/ruin/ancientstation/hydroponics)
 "en" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -1711,19 +1652,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel,
 /area/ruin/ancientstation)
-"eH" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
-	dir = 5;
-	icon_state = "green"
-	},
-/area/ruin/ancientstation/hydroponics)
 "eI" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel{
@@ -3857,18 +3785,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/ruin/ancientstation/engi)
-"jc" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation)
 "jd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable{
@@ -3889,26 +3805,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel,
 /area/ruin/ancientstation)
-"jg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation)
-"jh" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4";
-	tag = "90Curve"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation/thetacorridor)
 "ji" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -3957,13 +3853,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/science,
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation/thetacorridor)
-"jo" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/kirbyplants{
-	icon_state = "plant-dead"
-	},
 /turf/simulated/floor/plasteel,
 /area/ruin/ancientstation/thetacorridor)
 "jp" = (
@@ -4065,12 +3954,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/ruin/ancientstation)
-"jB" = (
-/obj/structure/table/reinforced,
-/obj/item/mod/control/pre_equipped/prototype,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/white,
-/area/ruin/ancientstation/proto)
 "jC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor{
@@ -4531,28 +4414,6 @@
 "kH" = (
 /turf/simulated/mineral/random/high_chance,
 /area/ruin/unpowered)
-"kI" = (
-/obj/effect/decal/warning_stripes/southeast,
-/obj/effect/decal/warning_stripes/northwest,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/human/oldsec,
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation)
-"kJ" = (
-/obj/effect/decal/warning_stripes/southeast,
-/obj/effect/decal/warning_stripes/northwest,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/human/oldsci,
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation)
-"kK" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/decal/warning_stripes/southeast,
-/obj/effect/decal/warning_stripes/northwest,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/human/oldeng,
-/turf/simulated/floor/plasteel,
-/area/ruin/ancientstation)
 "kL" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/hivebot/strong,
@@ -5070,15 +4931,111 @@
 /obj/effect/decal/warning_stripes/arrow,
 /turf/simulated/floor/plasteel,
 /area/ruin/ancientstation/thetacorridor)
+"ot" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/decal/warning_stripes/southeast,
+/obj/effect/decal/warning_stripes/northwest,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/alive/old/eng,
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation)
+"qC" = (
+/obj/structure/table/reinforced,
+/obj/item/mod/control/pre_equipped/prototype,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel/white,
+/area/ruin/ancientstation/proto)
+"re" = (
+/obj/effect/decal/warning_stripes/southeast,
+/obj/effect/decal/warning_stripes/northwest,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/alive/old/sci,
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation)
 "rN" = (
 /obj/structure/closet/crate/secure/weapon,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/ruin/ancientstation/thetacorridor)
+"so" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4";
+	tag = "90Curve"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation/thetacorridor)
+"uu" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation)
 "uQ" = (
 /obj/structure/lattice,
 /turf/template_noop,
 /area/space/nearstation)
+"vg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation)
+"vs" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation)
+"wv" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation/thetacorridor)
+"wQ" = (
+/obj/effect/decal/warning_stripes/southeast,
+/obj/effect/decal/warning_stripes/northwest,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/alive/old/sec,
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation)
+"Av" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/hivebot/strong,
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation/thetacorridor)
+"AX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation/thetacorridor)
 "AY" = (
 /obj/machinery/recharge_station,
 /obj/effect/decal/cleanable/dirt,
@@ -5089,6 +5046,18 @@
 /obj/machinery/power/tesla_coil,
 /turf/simulated/floor/plating,
 /area/ruin/ancientstation/thetacorridor)
+"JB" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/turf/simulated/floor/plasteel,
+/area/ruin/ancientstation)
 "LD" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -5100,11 +5069,42 @@
 /obj/machinery/door/airlock/maintenance_hatch,
 /turf/simulated/floor/plating,
 /area/ruin/ancientstation/thetacorridor)
+"Ss" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel{
+	dir = 9;
+	icon_state = "green"
+	},
+/area/ruin/ancientstation/hydroponics)
 "Xq" = (
 /mob/living/simple_animal/hostile/hivebot,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/ruin/ancientstation/thetacorridor)
+"YX" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-dead"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plasteel{
+	dir = 5;
+	icon_state = "green"
+	},
+/area/ruin/ancientstation/hydroponics)
 
 (1,1,1) = {"
 aa
@@ -6512,7 +6512,7 @@ aR
 aX
 bg
 az
-bE
+uu
 ca
 cy
 fj
@@ -6530,7 +6530,7 @@ dQ
 fj
 cy
 iH
-jc
+JB
 az
 jx
 jM
@@ -6659,7 +6659,7 @@ al
 bH
 ce
 cA
-em
+Ss
 dw
 dw
 hD
@@ -6775,7 +6775,7 @@ bA
 bC
 jP
 bC
-kJ
+re
 bC
 jP
 bC
@@ -6871,7 +6871,7 @@ jr
 dV
 jQ
 dV
-kK
+ot
 dV
 jQ
 kG
@@ -6965,7 +6965,7 @@ iJ
 bC
 bA
 bC
-kI
+wQ
 bC
 jP
 bC
@@ -7043,7 +7043,7 @@ al
 bH
 bH
 cA
-eH
+YX
 cY
 dw
 hF
@@ -7184,7 +7184,7 @@ az
 bb
 bm
 bs
-bK
+vs
 bC
 cF
 fM
@@ -7202,7 +7202,7 @@ bC
 lN
 cF
 bC
-jg
+vg
 az
 jA
 bg
@@ -7953,7 +7953,7 @@ ab
 aa
 aa
 bu
-dK
+Av
 fw
 dh
 gJ
@@ -7970,7 +7970,7 @@ lD
 ie
 fk
 fk
-jh
+so
 bu
 aa
 aa
@@ -8116,7 +8116,7 @@ dj
 ld
 lg
 jt
-jB
+qC
 jS
 jt
 kq
@@ -8673,7 +8673,7 @@ ac
 ac
 ab
 bu
-ct
+wv
 hn
 dq
 hj
@@ -8690,7 +8690,7 @@ lK
 im
 iz
 fq
-jo
+AX
 bu
 Xq
 LD

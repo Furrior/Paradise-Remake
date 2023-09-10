@@ -980,6 +980,10 @@
 	name = "Combat-Lube"
 	id = "combatlube"
 	description = "Combat-Lube is a refined and enhanced lubricant which induces effect stronger than Methamphetamine in synthetic users by drastically reducing internal friction and increasing cooling capabilities."
+<<<<<<< HEAD
+=======
+	process_flags = SYNTHETIC
+>>>>>>> upstream/master
 	overdose_threshold = 30
 	addiction_chance = 1
 	addiction_chance_additional = 20

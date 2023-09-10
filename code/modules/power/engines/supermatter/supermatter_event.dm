@@ -22,6 +22,10 @@
 	supermatter.event_active = src
 	on_start()
 	alert_engi()
+<<<<<<< HEAD
+=======
+	supermatter.investigate_log("event [src] has been triggered", "supermatter")
+>>>>>>> upstream/master
 	if(duration)
 		addtimer(CALLBACK(src, PROC_REF(on_end)), duration)
 
@@ -38,7 +42,10 @@
 	supermatter.power_additive = 0
 	supermatter.heat_multiplier = 1
 	supermatter.event_active = null
+<<<<<<< HEAD
 	supermatter.last_events += src
+=======
+>>>>>>> upstream/master
 
 /datum/supermatter_event/proc/sm_radio_say(text)
 	if(!text)

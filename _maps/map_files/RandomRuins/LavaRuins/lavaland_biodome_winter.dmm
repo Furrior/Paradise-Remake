@@ -258,10 +258,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/plating/ice/smooth,
 /area/ruin/powered/snow_biodome)
-"cv" = (
-/obj/item/chainsaw,
-/turf/simulated/floor/plating/asteroid/snow/atmosphere,
-/area/ruin/powered/snow_biodome)
 "dS" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/pod/dark,
@@ -457,6 +453,10 @@
 /obj/effect/spawner/window,
 /turf/simulated/floor/plating,
 /area/ruin/powered/snow_biodome)
+"RC" = (
+/obj/item/chainsaw,
+/turf/simulated/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/powered/snow_biodome)
 "Ub" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/pod/dark,
@@ -464,8 +464,8 @@
 "Wg" = (
 /turf/simulated/wall/r_wall,
 /area/ruin/powered/snow_biodome)
-"XR" = (
-/obj/effect/mob_spawn/human/skeleton,
+"Wz" = (
+/obj/effect/mob_spawn/human/corpse/skeleton,
 /turf/simulated/floor/mineral/silver,
 /area/ruin/powered/snow_biodome)
 
@@ -1210,7 +1210,7 @@ aa
 Wg
 Wg
 ak
-cv
+RC
 aB
 ak
 ak
@@ -1317,7 +1317,7 @@ MA
 kw
 tZ
 zT
-XR
+Wz
 kw
 MA
 aC
@@ -1347,7 +1347,7 @@ tZ
 ak
 aB
 kw
-XR
+Wz
 Pf
 GS
 kw

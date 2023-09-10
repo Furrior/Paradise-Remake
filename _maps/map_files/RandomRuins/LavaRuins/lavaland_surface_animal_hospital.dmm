@@ -535,10 +535,6 @@
 /obj/item/phone,
 /turf/simulated/floor/plasteel,
 /area/ruin/powered/animal_hospital)
-"bt" = (
-/obj/item/kirbyplants,
-/turf/simulated/floor/plasteel,
-/area/ruin/powered/animal_hospital)
 "bu" = (
 /obj/structure/chair/comfy/teal{
 	dir = 8
@@ -548,12 +544,6 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel,
-/area/ruin/powered/animal_hospital)
-"bv" = (
-/obj/effect/mob_spawn/human/doctor/alive/lavaland{
-	dir = 4
-	},
-/turf/simulated/floor/plasteel/white,
 /area/ruin/powered/animal_hospital)
 "bx" = (
 /obj/machinery/door/airlock/medical{
@@ -1016,6 +1006,16 @@
 	},
 /turf/simulated/floor/plasteel/white,
 /area/ruin/powered/animal_hospital)
+"pO" = (
+/obj/effect/mob_spawn/human/alive/doctor/lavaland{
+	dir = 4
+	},
+/turf/simulated/floor/plasteel/white,
+/area/ruin/powered/animal_hospital)
+"yi" = (
+/obj/item/kirbyplants,
+/turf/simulated/floor/plasteel,
+/area/ruin/powered/animal_hospital)
 
 (1,1,1) = {"
 aa
@@ -1335,7 +1335,7 @@ ae
 ae
 ae
 bl
-bt
+yi
 aE
 aK
 bW
@@ -1455,11 +1455,11 @@ ae
 ae
 ae
 bh
-bv
-bv
+pO
+pO
 cJ
 bn
-bv
+pO
 bP
 ae
 cE

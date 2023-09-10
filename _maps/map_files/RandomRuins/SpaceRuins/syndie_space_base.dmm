@@ -532,15 +532,6 @@
 	},
 /turf/simulated/floor/engine,
 /area/ruin/unpowered/syndicate_space_base/testlab)
-"fP" = (
-/obj/effect/mob_spawn/human/spacebase_syndicate{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	dir = 9;
-	icon_state = "darkblue"
-	},
-/area/ruin/unpowered/syndicate_space_base/dormitories)
 "fQ" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -1153,15 +1144,6 @@
 	icon_state = "whitegreen"
 	},
 /area/ruin/unpowered/syndicate_space_base/virology)
-"lM" = (
-/obj/effect/mob_spawn/human/spacebase_syndicate{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	dir = 6;
-	icon_state = "darkblue"
-	},
-/area/ruin/unpowered/syndicate_space_base/dormitories)
 "lZ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -1453,15 +1435,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/ruin/unpowered/syndicate_space_base/engineering)
-"pa" = (
-/obj/effect/mob_spawn/human/spacebase_syndicate{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	dir = 5;
-	icon_state = "darkblue"
-	},
-/area/ruin/unpowered/syndicate_space_base/dormitories)
 "ph" = (
 /obj/machinery/light,
 /obj/machinery/cryopod/offstation,
@@ -1788,6 +1761,15 @@
 	icon_state = "whiteblue"
 	},
 /area/ruin/unpowered/syndicate_space_base/medbay)
+"tH" = (
+/obj/effect/mob_spawn/human/alive/spacebase_syndicate{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 9;
+	icon_state = "darkblue"
+	},
+/area/ruin/unpowered/syndicate_space_base/dormitories)
 "tL" = (
 /obj/structure/closet/firecloset/full,
 /turf/simulated/floor/plasteel{
@@ -2754,6 +2736,15 @@
 	icon_state = "darkred"
 	},
 /area/ruin/unpowered/syndicate_space_base/cargo)
+"DV" = (
+/obj/machinery/light,
+/obj/effect/mob_spawn/human/alive/spacebase_syndicate{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "darkblue"
+	},
+/area/ruin/unpowered/syndicate_space_base/dormitories)
 "DW" = (
 /obj/machinery/computer/pandemic,
 /turf/simulated/floor/plasteel{
@@ -3150,6 +3141,14 @@
 	icon_state = "floorgrime"
 	},
 /area/ruin/unpowered/syndicate_space_base/bar)
+"HD" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-22"
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/ruin/unpowered/syndicate_space_base/bar)
 "HF" = (
 /obj/machinery/light{
 	dir = 8
@@ -3285,14 +3284,6 @@
 	icon_state = "whitebluefull"
 	},
 /area/ruin/unpowered/syndicate_space_base/medbay)
-"Ji" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-22"
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "dark"
-	},
-/area/ruin/unpowered/syndicate_space_base/bar)
 "Jk" = (
 /obj/machinery/tcomms/relay/ruskie{
 	network_id = "SYNDIE-RELAY"
@@ -3365,23 +3356,6 @@
 	icon_state = "dark"
 	},
 /area/ruin/unpowered/syndicate_space_base/main)
-"Ki" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-22"
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc/syndicate{
-	dir = 1;
-	name = "Bar APC";
-	pixel_y = 24
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "grimy"
-	},
-/area/ruin/unpowered/syndicate_space_base/bar)
 "Kj" = (
 /obj/machinery/light{
 	dir = 4
@@ -3756,15 +3730,6 @@
 /obj/item/t_scanner,
 /turf/simulated/floor/plating,
 /area/ruin/unpowered/syndicate_space_base/engineering)
-"MV" = (
-/obj/effect/mob_spawn/human/spacebase_syndicate{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	dir = 10;
-	icon_state = "darkblue"
-	},
-/area/ruin/unpowered/syndicate_space_base/dormitories)
 "Na" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3772,6 +3737,19 @@
 	icon_state = "dark"
 	},
 /area/ruin/unpowered/syndicate_space_base/chemistry)
+"Ny" = (
+/obj/machinery/light{
+	dir = 1;
+	on = 1
+	},
+/obj/effect/mob_spawn/human/alive/spacebase_syndicate{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 1;
+	icon_state = "darkblue"
+	},
+/area/ruin/unpowered/syndicate_space_base/dormitories)
 "NE" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{
 	autolink_id = "syndiebase_mix_in"
@@ -3832,6 +3810,15 @@
 	icon_state = "dark"
 	},
 /area/ruin/unpowered/syndicate_space_base/main)
+"NZ" = (
+/obj/effect/mob_spawn/human/alive/spacebase_syndicate{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 10;
+	icon_state = "darkblue"
+	},
+/area/ruin/unpowered/syndicate_space_base/dormitories)
 "Og" = (
 /turf/simulated/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/unpowered/syndicate_space_base/chemistry)
@@ -4037,6 +4024,23 @@
 	icon_state = "dark"
 	},
 /area/ruin/unpowered/syndicate_space_base/main)
+"Rx" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-22"
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/syndicate{
+	dir = 1;
+	name = "Bar APC";
+	pixel_y = 24
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "grimy"
+	},
+/area/ruin/unpowered/syndicate_space_base/bar)
 "Ry" = (
 /obj/structure/table/reinforced,
 /obj/item/surgicaldrill,
@@ -4066,16 +4070,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/engine,
 /area/ruin/unpowered/syndicate_space_base/testlab)
-"RG" = (
-/obj/machinery/light{
-	dir = 1;
-	on = 1
-	},
-/obj/effect/mob_spawn/human/spacebase_syndicate{
+"RL" = (
+/obj/effect/mob_spawn/human/alive/spacebase_syndicate{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel{
-	dir = 1;
+	dir = 6;
 	icon_state = "darkblue"
 	},
 /area/ruin/unpowered/syndicate_space_base/dormitories)
@@ -4434,15 +4434,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/ruin/unpowered/syndicate_space_base/engineering)
-"VP" = (
-/obj/machinery/light,
-/obj/effect/mob_spawn/human/spacebase_syndicate{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "darkblue"
-	},
-/area/ruin/unpowered/syndicate_space_base/dormitories)
 "VQ" = (
 /obj/machinery/shower{
 	dir = 8
@@ -4491,6 +4482,15 @@
 "Wr" = (
 /turf/simulated/floor/engine/air,
 /area/ruin/unpowered/syndicate_space_base/engineering)
+"Wx" = (
+/obj/effect/mob_spawn/human/alive/spacebase_syndicate{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel{
+	dir = 5;
+	icon_state = "darkblue"
+	},
+/area/ruin/unpowered/syndicate_space_base/dormitories)
 "Wz" = (
 /obj/structure/sign/lifestar{
 	name = "Medbay"
@@ -5777,7 +5777,7 @@ hR
 uX
 kE
 nj
-Ji
+HD
 GK
 Zl
 rw
@@ -5787,7 +5787,7 @@ lr
 Am
 Il
 Tw
-Ji
+HD
 HZ
 ZB
 yz
@@ -5963,7 +5963,7 @@ fF
 Op
 Es
 HZ
-Ki
+Rx
 di
 Jq
 jO
@@ -6012,13 +6012,13 @@ AV
 AV
 AV
 fF
-fP
+tH
 Vs
 wz
 La
 LP
 Vs
-MV
+NZ
 fF
 La
 fF
@@ -6074,13 +6074,13 @@ AV
 AV
 AV
 fF
-RG
+Ny
 La
 La
 La
 La
 La
-VP
+DV
 fF
 La
 fF
@@ -6136,13 +6136,13 @@ AV
 AV
 AV
 fF
-pa
+Wx
 Zy
 pK
 Zy
 pK
 Zy
-lM
+RL
 fF
 aT
 fF

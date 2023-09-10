@@ -217,8 +217,11 @@
 	var/heat_multiplier = 1
 	///amount of EER to ADD
 	var/power_additive = 0
+<<<<<<< HEAD
 	/// A list of all previous events
 	var/list/last_events = list()
+=======
+>>>>>>> upstream/master
 	/// Time of next event
 	var/next_event_time
 	/// Run S-Class event? So we can only run one S-class event per round per crystal
