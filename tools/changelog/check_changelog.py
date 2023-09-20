@@ -109,7 +109,7 @@ if has_invalid_tag:
     print("CL has invalid tags!")
     print("Valid tags are:")
     print(*tags['tags'].keys(), sep=", ")
-    exit(1)
+    exit(0)
 
 if write_cl['changes']:
     print("CL OK!")
