@@ -397,6 +397,12 @@ GLOBAL_LIST_EMPTY(PDAs)
 		to_chat(user, "The PDA softly beeps.")
 		close(user)
 		return TRUE
+	// SS220 ADDITION START: serpents mark
+	if(GLOB.serpents_network && GLOB.serpents_network.check_trigger(user, new_tone))
+		to_chat(user, "The PDA softly beeps.")
+		close(user)
+		return TRUE
+	// SS220 ADDITION END
 	ttone = new_tone
 	return TRUE
 
