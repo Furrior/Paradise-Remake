@@ -24,39 +24,58 @@ on:
 jobs:
   check-comment:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     outputs:
-      should_run: ${{ steps.check.outputs.should_run }}
+      should_run: ${{ steps.final_check.outputs.should_run }}
     steps:
-      - id: check
-        name: Check conditions
+      - id: check_comment
+        name: Check comment contents
         run: |
-          echo Debug stuff
-          echo "${{ github.event.issue.pull_request }}"
-          echo "${{ github.event.comment.body }}"
-          echo "${{ inputs.allowed-associations }}"
-          echo "${{ github.event.comment.author_association }}"
-          echo "${{ inputs.author-always-allowed }}"
+          if [[ -z "${{ github.event.issue.pull_request }}" || "${{ github.event.comment.body }}" != "${{ inputs.comment-body }}" ]]; then
+            echo "Not the command."
+            echo "correct_command=false" >> $GITHUB_OUTPUT
+          else
+            echo "Command found."
+            echo "correct_command=true" >> $GITHUB_OUTPUT
+          fi
+      - id: check_permissions
+        name: Check permissions
+        if: steps.check_comment.outputs.correct_command == 'true'
+        run: |
+          if ( [[ "${{ inputs.author-always-allowed }}" == "true" && "${{ github.event.sender.id }}" == "${{ github.event.issue.user.id }}" ]] || \
+               [[ ",${{ inputs.allowed-associations }}," == *",${{ github.event.comment.author_association }},"* ]] ); then
+            echo "Permissions check passed."
+            echo "enough_permissions=true" >> $GITHUB_OUTPUT
+          else
+            echo "Permissions check failed."
+            echo "enough_permissions=false" >> $GITHUB_OUTPUT
+          fi
 
-          if [[ "${{ github.event.issue.pull_request }}" != "" && \
-                "${{ github.event.comment.body }}" == "${{ inputs.comment-body }}" && \
-                (
-                  "${{ inputs.author-always-allowed }}" && ( "${{ github.event.sender.id }}" == "${{ github.event.issue.user.id }}" ) || \
-                  "${{ inputs.allowed-associations }}".includes("${{ github.event.comment.author_association }}") \
-                ) ]]; then
+      - id: final_check
+        name: Aggregate conditions
+        run: |
+          if [[ "${{ steps.check_comment.outputs.correct_command }}" == "true" && "${{ steps.check_permissions.outputs.enough_permissions }}" == "true" ]]; then
             echo "should_run=true" >> $GITHUB_OUTPUT
           else
             echo "should_run=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Add reaction
-        if: steps.check.outputs.should_run == 'true'
+      - name: Add positive reaction on success
+        if: steps.final_check.outputs.should_run == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMENT_ID: ${{ github.event.comment.id }}
-          REPO: ${{ github.repository }}
         run: |
-          gh api \
-            --method POST \
-            -H "Accept: application/vnd.github+json" \
-            /repos/$REPO/issues/comments/$COMMENT_ID/reactions \
-            -f content='+1'
+          gh api repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions \
+            --method POST -f content='+1'
+
+      - name: Add negative reaction on permission failure
+        # This only runs if the command was correct but the permission check failed.
+        # The first check in the 'check' step will have already passed.
+        if: steps.check_permissions.outputs.enough_permissions == 'false'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions \
+            --method POST -f content='-1'
