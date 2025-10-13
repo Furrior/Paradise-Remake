@@ -1,0 +1,62 @@
+name: "Component: Comment Handler"
+on:
+  workflow_call:
+    inputs:
+      comment-body:
+        description: "The exact body of the comment to trigger the action"
+        required: true
+        type: string
+      allowed-associations:
+        description: "A comma-separated list of allowed comment author associations"
+        required: false
+        type: string
+        default: "COLLABORATOR,MEMBER,OWNER"
+      author-always-allowed:
+        description: "Whether the author of the issue/pr is always allowed to trigger the action"
+        required: false
+        type: boolean
+        default: true
+    outputs:
+      should_run:
+        description: "Boolean indicating if the conditions were met"
+        value: ${{ jobs.check-comment.outputs.should_run }}
+
+jobs:
+  check-comment:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - id: check
+        name: Check conditions
+        run: |
+          echo Debug stuff
+          echo "${{ github.event.issue.pull_request }}"
+          echo "${{ github.event.comment.body }}"
+          echo "${{ inputs.allowed-associations }}"
+          echo "${{ github.event.comment.author_association }}"
+          echo "${{ inputs.author-always-allowed }}"
+
+          if [[ "${{ github.event.issue.pull_request }}" != "" && \
+                "${{ github.event.comment.body }}" == "${{ inputs.comment-body }}" && \
+                (
+                  "${{ inputs.author-always-allowed }}" && ( "${{ github.event.sender.id }}" == "${{ github.event.issue.user.id }}" ) || \
+                  "${{ inputs.allowed-associations }}".includes("${{ github.event.comment.author_association }}") \
+                ) ]]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_run=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Add reaction
+        if: steps.check.outputs.should_run == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh api \
+            --method POST \
+            -H "Accept: application/vnd.github+json" \
+            /repos/$REPO/issues/comments/$COMMENT_ID/reactions \
+            -f content='+1'
