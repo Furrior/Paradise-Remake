@@ -4,14 +4,15 @@ on:
     types: created
 
 jobs:
+  check-comment:
+    uses: ./.github/workflows/comment_handler.yml
+    secrets: inherit
+    with:
+      comment-body: "!build_rust"
+
   build-rust:
-    if: |
-      github.event.issue.pull_request &&
-      (github.event.comment.body == '!build_rust') &&
-      ((github.event.sender.id == github.event.issue.user.id) ||
-      (github.event.comment.author_association == 'COLLABORATOR') ||
-      (github.event.comment.author_association == 'MEMBER') ||
-      (github.event.comment.author_association == 'OWNER'))
+    needs: check-comment
+    if: needs.check-comment.outputs.should_run == 'true'
 
     runs-on: ubuntu-latest
     steps:
